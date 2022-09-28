@@ -16,6 +16,9 @@ header {
 .update_quote_btn { 
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .material-symbols-outlined {
     color: #333333;
@@ -54,27 +57,43 @@ header {
 }
 .info_block {
     width: 672px;
-    background: #333333;
-    color: white;
+    background: white;
+    color: #4F4F4F;
     padding: 50px 29px;
     display: flex;
     justify-content: space-between;
     margin-left: 78px;
     align-items: center;
     position: relative;
+    transition: 0.5s
+ }
+
+ .info_block:hover {
+    background: #333333;
+    color: white;
  }
 .author {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #F2F2F2;
+    cursor: pointer;
  }
+
+ .author:hover {
+     text-decoration: underline;
+ }   
+ 
 .category {
     font-size: 14px;
     line-height: 16px;
+    padding-top: 8px;
     color: #828282;
+    cursor: pointer;
  }
 
+ .category:hover {
+     text-decoration: underline;
+ }
  .forward_icon {
     color: #F2F2F2;;
  }
